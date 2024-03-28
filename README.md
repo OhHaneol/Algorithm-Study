@@ -4,7 +4,7 @@
 # 목차
 1. [String_문자열](#1.string_문자열)
 2. [Array_1,2차원 배열](#2.array_1,2차원-배열)
-3. [Two pointers, Sliding window_효율성 : O(n^2)-->O(n)](#3.two-pointers,-sliding-window)
+3. [Two pointers, Sliding window_효율성 : O(n^2)-->O(n)](#two-pointers,-sliding-window)
 4. [HashMap, TreeSet_해쉬, 정렬지원 Set](#4.hashmap,-treeset_해쉬,-정렬지원-set)
 5. [Stack, Queue_자료구조](#5.stack,-queue_자료구조)
 6. [Sorting and Searching_정렬, 이분검색과 결정알고리즘](#6.sorting-and-searching_정렬,-이분검색과-결정알고리즘)
@@ -26,7 +26,7 @@
 
 ---
 
-# 3.Two pointers, Sliding window
+# Two pointers, Sliding window
 효율성 : O(n^2)-->O(n)
 
 
