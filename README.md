@@ -3,53 +3,53 @@
 
 ---
 
-### String_문자열
-#### [문자 찾기](https://github.com/OhHaneol/algorithm/blob/main/String/%EB%AC%B8%EC%9E%90%20%EC%B0%BE%EA%B8%B0)
-#### [대소문자 변환](https://github.com/OhHaneol/algorithm/blob/main/String/%EB%8C%80%EC%86%8C%EB%AC%B8%EC%9E%90%20%EB%B3%80%ED%99%98)
+## String_문자열
+#### 1. [문자 찾기](https://github.com/OhHaneol/algorithm/blob/main/String/%EB%AC%B8%EC%9E%90%20%EC%B0%BE%EA%B8%B0)
+#### 2. [대소문자 변환](https://github.com/OhHaneol/algorithm/blob/main/String/%EB%8C%80%EC%86%8C%EB%AC%B8%EC%9E%90%20%EB%B3%80%ED%99%98)
 
 ---
 
-### Array_1,2차원 배열
-
-
----
-
-### Two pointers, Sliding window_효율성 : O(n^2)-->O(n)
+## Array_1,2차원 배열
 
 
 ---
 
-### HashMap, TreeSet_해쉬, 정렬지원 Set
+## Two pointers, Sliding window_효율성 : O(n^2)-->O(n)
 
 
 ---
 
-### Stack, Queue_자료구조
+## HashMap, TreeSet_해쉬, 정렬지원 Set
 
 
 ---
 
-### Sorting and Searching_정렬, 이분검색과 결정알고리즘
+## Stack, Queue_자료구조
 
 
 ---
 
-### Recursive, Tree, Graph_DFS, BFS 기초
+## Sorting and Searching_정렬, 이분검색과 결정알고리즘
 
 
 ---
 
-### DFS, BFS 활용
+## Recursive, Tree, Graph_DFS, BFS 기초
 
 
 ---
 
-### Greedy Algorithm
+## DFS, BFS 활용
 
 
 ---
 
-### dynamic programming_동적계획법
+## Greedy Algorithm
+
+
+---
+
+## dynamic programming_동적계획법
 
 
 
