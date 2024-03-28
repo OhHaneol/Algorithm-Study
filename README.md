@@ -12,6 +12,7 @@
 8. [DFS, BFS 활용](#8.dfs,-bfs-활용)
 9. [Greedy Algorithm](#9.greedy-algorithm)
 10. [10.dynamic programming_동적계획법](#10.dynamic-programming_동적계획법)
+11. [TEST](#test)
 
 ---
 
@@ -64,6 +65,8 @@
 
 # 10.dynamic programming_동적계획법
 
+
+# test
 
 
 #### []()
