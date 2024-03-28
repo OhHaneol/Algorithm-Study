@@ -66,7 +66,7 @@
 # 10.dynamic programming_동적계획법
 
 
-# 11.test A
+# 11.test a
 
 
 #### []()
