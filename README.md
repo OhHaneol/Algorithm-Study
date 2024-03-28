@@ -6,7 +6,7 @@
 2. [Array_1,2차원 배열](#2.array_1,2차원-배열)
 3. [Two pointers, Sliding window_효율성 : O(n^2)-->O(n)](#3.two-pointers,-sliding-window)
 4. [HashMap, TreeSet_해쉬, 정렬지원 Set](#4.hashmap,-treeset_해쉬,-정렬지원-set)
-5. [Stack, Queue_자료구조](#5.stack,queue)
+5. [Stack, Queue_자료구조](#5.stack)
 6. [Sorting and Searching_정렬, 이분검색과 결정알고리즘](#6.sorting-and-searching_정렬,-이분검색과-결정알고리즘)
 7. [Recursive, Tree, Graph_DFS, BFS 기초](#7.recursive,-tree,-graph_dfs,-bfs-기초)
 8. [DFS, BFS 활용](#8.dfs,-bfs-활용)
@@ -38,7 +38,7 @@
 
 ---
 
-# 5.Stack,Queue
+# 5.Stack
 
 
 ---
