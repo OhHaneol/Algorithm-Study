@@ -15,7 +15,8 @@ import java.io.InputStreamReader;
  */
 
 public class Main {
-    public String solution(String str) {
+    // split() 사용
+    public String solution1(String str) {
         String result="";
         int m = Integer.MIN_VALUE;
         String[] s = str.split(" ");
@@ -26,15 +27,34 @@ public class Main {
                 result = word;
             }
         }
-
         return result;
+    }
+
+    // indexOf(), subString() 사용
+    public String solution2(String str) {
+        String result = "";
+        int m = Integer.MIN_VALUE, pos;
+
+        while ((pos = str.indexOf(' ')) != -1) {
+            String tmp = str.substring(0, pos);
+            int len = tmp.length();
+            if (len > m) {
+                m = len;
+                result = tmp;
+            }
+            // 지난 문장을 제외하고, 앞으로 검사할 부분만 자름
+            str = str.substring(pos + 1);
+        }
+        // 빈칸 없이 마지막으로 남은 문장이 가장 긴 문장일 경우
+        if(str.length() > m) result = str;
+        return str;
     }
 
     public static void main(String[] args) throws IOException {
         Main T = new Main();
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String s = br.readLine();
-        String str = T.solution(s);
+        String str = T.solution2(s);
         System.out.println(str);
     }
 }
