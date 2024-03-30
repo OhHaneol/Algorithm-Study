@@ -21,9 +21,7 @@ public class Main {
         String[] s = str.split(" ");
 
         for (String word : s) {
-            if (word.length() == m) {
-                continue;
-            } else if (word.length() > m) {
+            if (word.length() > m) {
                 m = word.length();
                 result = word;
             }
