@@ -7,7 +7,7 @@
 2. [Exhaustive Algorithm](#exhaustive-algorithm)
 3. [Recursive, Tree, Graph_DFS, BFS 기초](#recursive,-tree,-graph_dfs,-bfs-기초)
 4. [DFS, BFS 활용](#dfs,-bfs-활용)
-5. [dynamic programming_동적계획법](#dynamic-programming-동적계획법)
+5. [dynamic programming_동적계획법](#dynamic-programming_동적계획법)
 ---
 
 ## Greedy Algorithm
