@@ -10,11 +10,11 @@
 5. [dynamic programming_동적계획법](#dynamic-programming_동적계획법)
 ---
 
-## Greedy Algorithm
+## 📍 Greedy Algorithm
 
-### 개념
+### 🧷 개념
 
-### 문제 풀이
+### 🧷 문제 풀이
 - [씨름 선수](https://github.com/OhHaneol/algorithm/tree/main/greedy/%EC%94%A8%EB%A6%84%EC%84%A0%EC%88%98)
   - 좌표 정렬을 선행해야 하는데, 아직 진행 X
   - 대신 Comparator 익명 클래스 구현을 이용 : [[Java] 2차원 배열 정렬 (오름차순, 내림차순, 다중 조건)](https://ifuwanna.tistory.com/328)
@@ -28,36 +28,36 @@
 
 ---
 
-## Exhaustive Algorithm
+## 📍 Exhaustive Algorithm
 
-### 개념
+### 🧷 개념
 
-### 문제 풀이
+### 🧷 문제 풀이
 - []()
 
 ---
 
-## Recursive, Tree, Graph_DFS, BFS 기초
+## 📍 Recursive, Tree, Graph_DFS, BFS 기초
 
-### 개념
+### 🧷 개념
 
-### 문제 풀이
+### 🧷 문제 풀이
 - []()
 
 ---
 
-## DFS, BFS 활용
+## 📍 DFS, BFS 활용
 
-### 개념
+### 🧷 개념
 
-### 문제 풀이
+### 🧷 문제 풀이
 - []()
 
 ---
 
-## dynamic programming_동적계획법
+## 📍 dynamic programming_동적계획법
 
-### 개념
+### 🧷 개념
 
-### 문제 풀이
+### 🧷 문제 풀이
 - []()
