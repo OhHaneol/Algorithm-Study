@@ -3,14 +3,14 @@
 
 ## 목차
 
-1. [Greedy Algorithm](#1.greedy-algorithm)
-2. [Exhaustive Algorithm](#2.exhaustive-algorithm)
-3. [Recursive, Tree, Graph_DFS, BFS 기초](#3.recursive,-tree,-graph_dfs,-bfs-기초)
-4. [DFS, BFS 활용](#4.dfs,-bfs-활용)
-5. [dynamic programming_동적계획법](#5.dynamic-programming_동적계획법)
+1. [Greedy Algorithm](#greedy-algorithm)
+2. [Exhaustive Algorithm](#exhaustive-algorithm)
+3. [Recursive, Tree, Graph_DFS, BFS 기초](#recursive,-tree,-graph_dfs,-bfs-기초)
+4. [DFS, BFS 활용](#dfs,-bfs-활용)
+5. [dynamic programming_동적계획법](#dynamic-programming-동적계획법)
 ---
 
-## 1.Greedy Algorithm
+## Greedy Algorithm
 
 ### 개념
 
@@ -28,7 +28,7 @@
 
 ---
 
-## 2.Exhaustive Algorithm
+## Exhaustive Algorithm
 
 ### 개념
 
@@ -37,7 +37,7 @@
 
 ---
 
-## 3.Recursive, Tree, Graph_DFS, BFS 기초
+## Recursive, Tree, Graph_DFS, BFS 기초
 
 ### 개념
 
@@ -46,7 +46,7 @@
 
 ---
 
-## 4.DFS, BFS 활용
+## DFS, BFS 활용
 
 ### 개념
 
@@ -55,7 +55,7 @@
 
 ---
 
-## 5.dynamic programming_동적계획법
+## dynamic programming_동적계획법
 
 ### 개념
 
