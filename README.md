@@ -15,7 +15,7 @@
 ### 개념
 
 ### 문제 풀이
-- [씨름 선수]()
+- [씨름 선수](https://github.com/OhHaneol/algorithm/tree/main/greedy/%EC%94%A8%EB%A6%84%EC%84%A0%EC%88%98)
 - [회의실 배정]()
 - [결혼식]()
 - [최대 수입 스케줄]()
