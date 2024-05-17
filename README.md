@@ -1,4 +1,4 @@
-# algorithm
+# Algorithm-Study
 코딩테스트 공부 with 자바
 
 ## 목차
