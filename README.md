@@ -71,6 +71,7 @@
 
 ### 🧷 문제 풀이
 - [좌표 정렬](https://github.com/OhHaneol/Algorithm-Study/tree/main/sorting-and-searching/%EC%A2%8C%ED%91%9C%20%EC%A0%95%EB%A0%AC)
+  - 람다(Lambda)를 이용한 좌표 정렬을 알아보았다.
 - []()
 - []()
 - []()
