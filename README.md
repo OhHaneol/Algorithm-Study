@@ -17,10 +17,14 @@
 
 ### 🧷 문제 풀이
 - [씨름 선수](https://github.com/OhHaneol/algorithm/tree/main/greedy/%EC%94%A8%EB%A6%84%EC%84%A0%EC%88%98)
-  - 좌표 정렬로 Comparator 익명 클래스 구현을 이용 : [[Java] 2차원 배열 정렬 (오름차순, 내림차순, 다중 조건)](https://ifuwanna.tistory.com/328)
+  - 좌표 정렬로 `Comparator 익명 클래스` 구현을 이용 : [[Java] 2차원 배열 정렬 (오름차순, 내림차순, 다중 조건)](https://ifuwanna.tistory.com/328)
+  - 방식: 첫 번째 인자를 기준으로 내림차순 정렬 후, 두 번째 인자의 비교
 - [회의실 배정](https://github.com/OhHaneol/algorithm/tree/main/greedy/%ED%9A%8C%EC%9D%98%EC%8B%A4%20%EB%B0%B0%EC%A0%95)
-  - 좌표 정렬로 Lambda 이용
+  - 좌표 정렬로 `Lambda` 이용
+  - 방식: 두 번째 인자를 기준으로 오름차순 정렬하며, 동일할 경우 첫 번째 인자를 기준으로 내림차순 정렬
 - [결혼식](https://github.com/OhHaneol/algorithm/tree/main/greedy/%EA%B2%B0%ED%98%BC%EC%8B%9D)
+  - `Collections.sort` 를 이용해 좌표 정렬 진행
+  - 방식: 객체를 만들고 한 객체를 기준으로 오름차순 정렬 후, 동일할 경우 다른 한 인자를 기준으로 오름차순 정렬
 - [최대 수입 스케줄]()
 - [다익스트라 알고리즘]()
 - [친구인가]()
