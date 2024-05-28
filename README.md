@@ -23,7 +23,7 @@
   - 좌표 정렬로 `Lambda` 이용
   - 방식: 두 번째 인자를 기준으로 오름차순 정렬하며, 동일할 경우 첫 번째 인자를 기준으로 내림차순 정렬
 - [결혼식](https://github.com/OhHaneol/algorithm/tree/main/greedy/%EA%B2%B0%ED%98%BC%EC%8B%9D)
-  - `Collections.sort` 를 이용해 좌표 정렬 진행
+  - `Collections.sort` 를 이용해 좌표 정렬 진행 : [[JAVA] 객체 List 정렬 및 2번째 조건으로 정렬](https://kim-oriental.tistory.com/45)
   - 방식: 객체를 만들고 한 객체를 기준으로 오름차순 정렬 후, 동일할 경우 다른 한 인자를 기준으로 오름차순 정렬
 - [최대 수입 스케줄]()
 - [다익스트라 알고리즘]()
