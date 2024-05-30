@@ -25,7 +25,10 @@
 - [결혼식](https://github.com/OhHaneol/algorithm/tree/main/greedy/%EA%B2%B0%ED%98%BC%EC%8B%9D)
   - `Collections.sort` 를 이용해 좌표 정렬 진행 : [[JAVA] 객체 List 정렬 및 2번째 조건으로 정렬](https://kim-oriental.tistory.com/45)
   - 방식: 객체를 만들고 한 객체를 기준으로 오름차순 정렬 후, 동일할 경우 다른 한 인자를 기준으로 오름차순 정렬
-- [최대 수입 스케줄]()
+- [최대 수입 스케줄](https://github.com/OhHaneol/Algorithm-Study/tree/main/greedy/%EC%B5%9C%EB%8C%80%EC%88%98%EC%9E%85%EC%8A%A4%EC%BC%80%EC%A4%84)
+  - 좌표 정렬로 `Lambda` 이용
+  - 방식 1: 일차원 배열을 만들어서, 선점된 날짜는 1, 비어 있는 날짜는 0 으로 구분
+  - 방식 2: 우선순위 큐 저장소를 통해 날짜가 바뀔 때마다 가장 큰 수입을 반환
 - [다익스트라 알고리즘]()
 - [친구인가]()
 - [원더랜드 1]()
