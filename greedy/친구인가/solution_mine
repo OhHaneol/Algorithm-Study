@@ -1,0 +1,91 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.*;
+
+public class Main {
+  public static void main(String[] args) throws IOException {
+
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    StringTokenizer st = new StringTokenizer(br.readLine());
+
+    int n = Integer.parseInt(st.nextToken());
+    int m = Integer.parseInt(st.nextToken());
+
+    int[][] friendInfo = new int[m][2];
+    for (int i = 0; i < friendInfo.length; i++) {
+      st = new StringTokenizer(br.readLine());
+      friendInfo[i][0] = Integer.parseInt(st.nextToken());
+      friendInfo[i][1] = Integer.parseInt(st.nextToken());
+    }
+
+    st = new StringTokenizer(br.readLine());
+    int student1 = Integer.parseInt(st.nextToken());
+    int student2 = Integer.parseInt(st.nextToken());
+
+    Boolean friend = isFriend(n, friendInfo, student1, student2);
+
+    String answer = friend ? "YES" : "NO";
+    System.out.println(answer);
+  }
+
+  /**
+   * 이차원 배열로 친구 여부 체크 좌표의 하단을 기준으로, 알고 싶은 관계의 '위쪽'과 '오른쪽'이 친구이면 해당 관계도 친구이다.
+   * 즉 2차 체크 시 로직은 위에서 아래로(i 증가), 또 오른쪽에서 왼쪽으로(j 감소) 체크되어야 한다는 뜻이다.
+   * 이 때 i 에서 첫 번째 인자는 자기 자신이라 체크를 제외하고, 두 번째 인자는 삼각관계의 여지가 없어서 제외한다.
+   * TODO 왜 오답으로 채점될까... 강의 들으면서 빠진 logic 확인하기
+   */
+  public static Boolean isFriend(int n, int[][] friendInfo, int s1, int s2) {
+
+    // 1. 선택 절차 적용
+
+    Arrays.sort(
+        friendInfo,
+        ((o1, o2) -> {
+          return o1[0] != o2[0] ? o1[0] - o2[0] : o1[1] - o2[1];
+        }));
+
+    // 2. 적절성 검사
+
+    int[][] friendCheck = new int[n + 1][n + 1];
+
+    // 첫 번째 체크
+    for (int i = 0; i < friendInfo.length; i++) {
+      int x = friendInfo[i][0];
+      int y = friendInfo[i][1];
+      friendCheck[x][y] = 1;
+      friendCheck[y][x] = 1; // 문제에 낮은 번호와 높은 번호 순으로 친구쌍을 준다는 조건이 없다.
+    }
+
+//    System.out.println("====== 첫 번째 체크 ======");
+//    for (int i = 1; i < friendCheck.length; i++) {
+//      System.out.print(i + " | ");
+//      for (int j = 1; j < friendCheck.length; j++) {
+//        System.out.print(friendCheck[i][j] + " ");
+//      }
+//      System.out.println();
+//    }
+
+    // 두 번째 체크
+    for (int i = 3; i < friendCheck.length; i++) {
+      for (int j = i - 2; j > 0; j--) {
+        if (friendCheck[i-1][j] == 1 && friendCheck[i][j+1] == 1) {
+          friendCheck[i][j] = 1;
+          friendCheck[j][i] = 1;
+        }
+      }
+    }
+
+//    System.out.println("====== 두 번째 체크 ======");
+//    for (int i = 1; i < friendCheck.length; i++) {
+//      System.out.print(i + " | ");
+//      for (int j = 1; j < friendCheck.length; j++) {
+//        System.out.print(friendCheck[i][j] + " ");
+//      }
+//      System.out.println();
+//    }
+
+    if (friendCheck[s1][s2] == 1) return true;
+    else return false;
+  }
+}
