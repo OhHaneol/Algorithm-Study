@@ -17,23 +17,24 @@
 
 ### 🧷 문제 풀이
 - [씨름 선수](https://github.com/OhHaneol/algorithm/tree/main/greedy/%EC%94%A8%EB%A6%84%EC%84%A0%EC%88%98)
-  - 좌표 정렬로 `Comparator 익명 클래스` 구현을 이용 : [[Java] 2차원 배열 정렬 (오름차순, 내림차순, 다중 조건)](https://ifuwanna.tistory.com/328)
-  - 방식: 첫 번째 인자를 기준으로 내림차순 정렬 후, 두 번째 인자의 비교
+  - 좌표 정렬로 `Comparator 익명 클래스` 구현을 이용한다. : [[Java] 2차원 배열 정렬 (오름차순, 내림차순, 다중 조건)](https://ifuwanna.tistory.com/328)
+  - 방식: 첫 번째 인자를 기준으로 내림차순 정렬 후, 두 번째 인자의 비교를 진행한다.
 - [회의실 배정](https://github.com/OhHaneol/algorithm/tree/main/greedy/%ED%9A%8C%EC%9D%98%EC%8B%A4%20%EB%B0%B0%EC%A0%95)
-  - 좌표 정렬로 `Lambda` 이용
-  - 방식: 두 번째 인자를 기준으로 오름차순 정렬하며, 동일할 경우 첫 번째 인자를 기준으로 내림차순 정렬
+  - 좌표 정렬로 `Lambda`를 이용한다.
+  - 방식: 두 번째 인자를 기준으로 오름차순 정렬하며, 동일할 경우 첫 번째 인자를 기준으로 내림차순 정렬한다.
 - [결혼식](https://github.com/OhHaneol/algorithm/tree/main/greedy/%EA%B2%B0%ED%98%BC%EC%8B%9D)
-  - `Collections.sort` 를 이용해 좌표 정렬 진행 : [[JAVA] 객체 List 정렬 및 2번째 조건으로 정렬](https://kim-oriental.tistory.com/45)
-  - 방식: 객체를 만들고 한 객체를 기준으로 오름차순 정렬 후, 동일할 경우 다른 한 인자를 기준으로 오름차순 정렬
+  - `Collections.sort` 를 이용해 좌표 정렬을 진행한다. : [[JAVA] 객체 List 정렬 및 2번째 조건으로 정렬](https://kim-oriental.tistory.com/45)
+  - 방식: 객체를 만들고 한 객체를 기준으로 오름차순 정렬 후, 동일할 경우 다른 한 인자를 기준으로 오름차순 정렬한다.
 - [최대 수입 스케줄](https://github.com/OhHaneol/Algorithm-Study/tree/main/greedy/%EC%B5%9C%EB%8C%80%EC%88%98%EC%9E%85%EC%8A%A4%EC%BC%80%EC%A4%84)
-  - 좌표 정렬로 `Lambda` 이용
-  - 우선순위 큐 저장소 이용 : [[Data Structure] 우선순위 큐(Priority Queue)란?](https://tmdrnr96.tistory.com/32)
-  - 방식 1: 일차원 배열을 만들어서, 선점된 날짜는 1, 비어 있는 날짜는 0 으로 구분
-  - 방식 2: `우선순위 큐` 저장소를 통해 날짜가 바뀔 때마다 가장 큰 수입을 반환
+  - 좌표 정렬로 `Lambda`를 이용한다.
+  - 우선순위 큐 저장소를 이용한다. : [[Data Structure] 우선순위 큐(Priority Queue)란?](https://tmdrnr96.tistory.com/32)
+  - 방식 1: 일차원 배열을 만들어서, 선점된 날짜는 1, 비어 있는 날짜는 0 으로 구분한다.
+  - 방식 2: `우선순위 큐` 저장소를 통해 날짜가 바뀔 때마다 가장 큰 수입을 반환한다.
 - [다익스트라 알고리즘]()
 - [친구인가](https://github.com/OhHaneol/Algorithm-Study/tree/main/greedy/%EC%B9%9C%EA%B5%AC%EC%9D%B8%EA%B0%80)
-  - 방식: 자신을 인덱스로, 자신과 친구관계인 인덱스를 값으로 갖는 배열을 만들고, `x = f(x)` 의 재귀 형식을 취한다.
-- [원더랜드 1]()
+  - 방식: Union&Find_자신을 인덱스로, 자신과 친구관계인 인덱스를 값으로 갖는 배열을 만들고, `x = f(x)` 의 재귀 형식을 취한다.
+- [원더랜드 1](https://github.com/OhHaneol/Algorithm-Study/tree/main/greedy/%EC%9B%90%EB%8D%94%EB%9E%9C%EB%93%9C1)
+  - 방식: Union&Find 와 greedy 를 이용해서 최소 비용으로 모든 도시를 연결한다.
 - [원더랜드 2]()
 
 ---
