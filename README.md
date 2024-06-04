@@ -27,15 +27,21 @@
   - 방식: 객체를 만들고 한 객체를 기준으로 오름차순 정렬 후, 동일할 경우 다른 한 인자를 기준으로 오름차순 정렬한다.
 - [최대 수입 스케줄](https://github.com/OhHaneol/Algorithm-Study/tree/main/greedy/%EC%B5%9C%EB%8C%80%EC%88%98%EC%9E%85%EC%8A%A4%EC%BC%80%EC%A4%84)
   - 좌표 정렬로 `Lambda`를 이용한다.
-  - 우선순위 큐 저장소를 이용한다. : [[Data Structure] 우선순위 큐(Priority Queue)란?](https://tmdrnr96.tistory.com/32)
+  - `PriorityQueue` 저장소를 이용한다. : [[Data Structure] 우선순위 큐(Priority Queue)란?](https://tmdrnr96.tistory.com/32)
   - 방식 1: 일차원 배열을 만들어서, 선점된 날짜는 1, 비어 있는 날짜는 0 으로 구분한다.
   - 방식 2: `우선순위 큐` 저장소를 통해 날짜가 바뀔 때마다 가장 큰 수입을 반환한다.
-- [다익스트라 알고리즘]()
+- [다익스트라 알고리즘](https://github.com/OhHaneol/Algorithm-Study/tree/main/greedy/%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)
+  - `최단 거리` 또는 `최소 비용`을 구하는 데 쓰는 알고리즘.
+  - `PriorityQueue` 저장소를 이용한다.
+  - 객체 list를 갖는 list 인 `graph` 를 이용한다.
+  - 정점을 인덱스로, 시작 정점을 기준으로 각 정점까지의 비용을 값으로 갖는 배열 `dist`를 이용한다.
+  - (`dist` 에 저장된 `next` 까지의 비용)과, (`PriorityQueue` 에서 꺼낸 값 `now` + `graph` 에서 꺼낸 값 `next`) 를 반복해서 비교하며 최소비용을 `dist` 에 저장한다.
 - [친구인가](https://github.com/OhHaneol/Algorithm-Study/tree/main/greedy/%EC%B9%9C%EA%B5%AC%EC%9D%B8%EA%B0%80)
   - 방식: Union&Find_자신을 인덱스로, 자신과 친구관계인 인덱스를 값으로 갖는 배열을 만들고, `x = f(x)` 의 재귀 형식을 취한다.
-- [원더랜드 1](https://github.com/OhHaneol/Algorithm-Study/tree/main/greedy/%EC%9B%90%EB%8D%94%EB%9E%9C%EB%93%9C1)
+- [원더랜드 1_크루스칼](https://github.com/OhHaneol/Algorithm-Study/tree/main/greedy/%EC%9B%90%EB%8D%94%EB%9E%9C%EB%93%9C1)
+  - `크루스칼`은 `최소스패닝트리(최소비용트리)`에 사용되는 알고리즘이다.
   - 방식: Union&Find 와 greedy 를 이용해서 최소 비용으로 모든 도시를 연결한다.
-- [원더랜드 2]()
+- [원더랜드 2_프림]()
 
 ---
 
