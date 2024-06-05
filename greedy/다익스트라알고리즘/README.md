@@ -38,17 +38,17 @@
 
 ## 📍 분석
 
-- 눈 여겨 봐야할 것은, `dist[]`, `graph`, `PriorityQueue` 이 세 가지 저장소이다.
+- 주목해야 할 것은, `dist[]`, `graph`, `PriorityQueue` 이 세 가지 저장소이다.
 
-- `dist[]`
+- **`dist[]`**
   - 최소 비용을 구하기 위해, 원하는 정점으로부터의 최소 비용을 담는 배열 `dist[]` 를 선언하고, `Integer.MAX_VALUE` 로 초기화한다.
 
-- `graph`
+- **`graph`**
   - 도착 노드와 그 가중치를 갖는 객체 `Edge` 와, 시작 노트별 `Edge list` 를 갖는 `gragh` 를 이용한다. 이를 그림으로 표현하면 아래와 같다.
 
     <img width=400 src="https://github.com/OhHaneol/Algorithm-Study/assets/62991586/cf3bcda5-527d-41ef-983b-6486387b4e11">
 
-- `PriorityQueue`
+- **`PriorityQueue`**
   - `PriorityQueue` 저장소 `pQ`를 생성하고, 시작 노드인 1 에 대한 비용을 0으로 초기화한다.
   - `pQ` 가 비기 전까지 다음의 과정을 반복한다.
     - 제일 비용이 적게 드는 `edge(최종 노드, 비용)`를 꺼내고, `now` 로 저장한다.
