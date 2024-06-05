@@ -51,7 +51,7 @@
 - **`PriorityQueue`**
   - `PriorityQueue` 저장소 `pQ`를 생성하고, 시작 노드인 1 에 대한 비용을 0으로 초기화한다.
   - `pQ` 가 비기 전까지 다음의 과정을 반복한다.
-    - 제일 비용이 적게 드는 `edge(최종 노드, 비용)`를 꺼내고, `now` 로 저장한다. 이 때 객체의 우선순위는 Edge 객체에서 Comparable 을 구현하여 정한다. - [PriorityQueue 우선순위 큐 사용법](https://kbj96.tistory.com/49)
+    - 제일 비용이 적게 드는 `edge(최종 노드, 비용)`를 꺼내고, `now` 로 저장한다. 이 때 **객체의 우선순위**는 `Edge` 객체에서 `Comparable` 을 구현하여 정한다. - [PriorityQueue 우선순위 큐 사용법](https://kbj96.tistory.com/49)
     - 만약 현재 노드에 대해, `now`의 비용이 `dist[]`에 있는 now 의 비용보다 클 경우 (논할 가치도 없으므로) continue 한다.
     - (작을 경우)`graph` 의 `now` 노드에 대한 `edge` 리스트에 대해, 도착 노드를 `next`라고 할 때,`dist[]` 에 저장된 `next`까지의 비용이 (현재까지의 비용) + (next 비용) 보다 클 때(비용 바꿔야 할 때) dist[] 의 비용을 변경한다.
     - 그리고 `pQ`에 해당 `edge`를 추가한다.
