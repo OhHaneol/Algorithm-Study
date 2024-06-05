@@ -3,9 +3,9 @@
 
 ## 목차
 
-1. [Greedy Algorithm](#-greedy-algorithm)
-2. [Exhaustive Algorithm](#-exhaustive-algorithm)
-3. [Recursive, Tree, Graph_DFS, BFS 기초](#-recursive,-tree,-graph_dfs,-bfs-기초)
+1. [Exhaustive Algorithm](#-exhaustive-algorithm)
+2. [Recursive, Tree, Graph_DFS, BFS 기초](#-recursive,-tree,-graph_dfs,-bfs-기초)
+3. [Greedy Algorithm](#-greedy-algorithm)
 4. [DFS, BFS 활용](#-dfs,-bfs-활용)
 5. [dynamic programming_동적계획법](#-dynamic-programming_동적계획법)
 6. [Sorting and Searching](#-sorting-and-searching)
