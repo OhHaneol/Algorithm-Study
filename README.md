@@ -11,6 +11,37 @@
 6. [Sorting and Searching](#-sorting-and-searching)
 ---
 
+## 📍 Recursive, Tree, Graph_DFS, BFS 기초
+
+### 🧷 개념
+
+### 🧷 문제 풀이
+- [재귀함수(스택프레임)](https://github.com/OhHaneol/Algorithm-Study/tree/main/DFS-BFS-%EA%B8%B0%EC%B4%88/%EC%9E%AC%EA%B7%80%ED%95%A8%EC%88%98(%EC%8A%A4%ED%83%9D%ED%94%84%EB%A0%88%EC%9E%84))
+- [이진수 출력(재귀)](https://github.com/OhHaneol/Algorithm-Study/tree/main/DFS-BFS-%EA%B8%B0%EC%B4%88/%EC%9D%B4%EC%A7%84%EC%88%98%20%EC%B6%9C%EB%A0%A5(%EC%9E%AC%EA%B7%80))
+- [팩토리얼]()
+- [피보나치 재귀(메모이제이션)]()
+- [이진트리 순회(DFS)]()
+- [부분집합 구하기(DFS)]()
+- [이진트리 레벨 탐색(BFS)]()
+- [송아지 찾기1(BFS)]()
+- [Tree 말단 노드까지의 가장 짧은 경로(DFS)]()
+- [Tree 말단 노드까지의 가장 짧은 경로(BFS)]()
+- [그래프와 인접행렬]()
+- [경로 탐색(DFS)]()
+- [경로 탐색(인접리스트, ArrayList)]()
+- [그래프 최단거리(BFS)]()
+
+---
+
+## 📍 DFS, BFS 활용
+
+### 🧷 개념
+
+### 🧷 문제 풀이
+- []()
+
+---
+
 ## 📍 Greedy Algorithm
 
 ### 🧷 개념
@@ -41,34 +72,10 @@
 - [원더랜드 1_크루스칼](https://github.com/OhHaneol/Algorithm-Study/tree/main/greedy/%EC%9B%90%EB%8D%94%EB%9E%9C%EB%93%9C1)
   - `크루스칼`은 `최소스패닝트리(최소비용트리)`에 사용되는 알고리즘이다.
   - 방식: Union&Find 와 greedy 를 이용해서 최소 비용으로 모든 도시를 연결한다.
-- [원더랜드 2_프림]()
-
----
-
-## 📍 Exhaustive Algorithm
-
-### 🧷 개념
-
-### 🧷 문제 풀이
-- []()
-
----
-
-## 📍 Recursive, Tree, Graph_DFS, BFS 기초
-
-### 🧷 개념
-
-### 🧷 문제 풀이
-- []()
-
----
-
-## 📍 DFS, BFS 활용
-
-### 🧷 개념
-
-### 🧷 문제 풀이
-- []()
+- [원더랜드 2_프림](https://github.com/OhHaneol/Algorithm-Study/tree/main/greedy/%EC%9B%90%EB%8D%94%EB%9E%9C%EB%93%9C2)
+  - `PriorityQueue` 저장소를 이용한다.
+  - 객체 list를 갖는 list 인 `graph` 를 이용하고, 방향성이 없으므로 각 객체에 이중으로 추가해준다.
+  - 연결이 되었는지를 체크하는 배열 `unc`를 이용한다.
 
 ---
 
