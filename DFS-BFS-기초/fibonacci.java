@@ -1,3 +1,5 @@
+package algorithm;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -19,8 +21,9 @@ public class Main {
     }
 
     public static int fibonacci(int n) {
+        if (fibo[n] > 0) return fibo[n];    // 메모리제이션 활용
         if (n == 1) return fibo[n] = 1;
         else if (n == 2) return fibo[n] = 1;
-        else return fibo[n] = fibonacci(n - 2) + fibonacci(n - 1);
+        else return fibo[n] = fibonacci(n - 2) + fibonacci(n - 1);    // 메모리제이션
     }
 }
