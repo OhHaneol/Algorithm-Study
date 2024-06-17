@@ -44,6 +44,22 @@
   - [이진 트리 순회](https://github.com/OhHaneol/Algorithm-Study/blob/main/DFS-BFS-%EA%B8%B0%EC%B4%88/binaryTree.java)
     
     - 전위 기준: 하위 루트 노드의 순회 및 출력이 끝나면 백트래킹하고, 상위 루트 노드에서 마찬가지로 로직을 수행한다.
+   
+- 레벨 탐색 문제
+
+  - [부분집합 구하기](https://github.com/OhHaneol/Algorithm-Study/blob/main/DFS-BFS-%EA%B8%B0%EC%B4%88/subset.java)
+
+    - 1부터 n 까지의 모든 부분집합을 구하기 위해, 출력 여부(각 부분집합 포함 여부)를 0과 1로 저장하는 ch[] 배열을 저장한다.
+      
+    - 만약 단말 노드(n)에 이르를 경우(L == n + 1) ch[] 배열에서 1로 저장된 인덱스만 출력한다.
+
+  - [이진트리 레벨탐색](https://github.com/OhHaneol/Algorithm-Study/blob/main/DFS-BFS-%EA%B8%B0%EC%B4%88/BFS.java)
+
+    - 맨 처음 `Queue` 에 루트 노드를 `offer` 하고, 레벨을 나타내는 `L` 을 선언한다.
+    - 전체 레벨에 대한 반복문 `while` 문 내부에서 각 레벨당 노드 수를 나타내는 `len` 에 대해, 다시 각 레벨의 노드별 데이터를 출력하며 해당 노드의 자식 노드를 `Queue` 에 `offer` 하는 `for` 문을 돌린다.
+
+  - [송아지 찾기 1](https://github.com/OhHaneol/Algorithm-Study/tree/main/DFS-BFS-%EA%B8%B0%EC%B4%88/%EC%86%A1%EC%95%84%EC%A7%80%20%EC%B0%BE%EA%B8%B0%201)
+
 
 ---
 
