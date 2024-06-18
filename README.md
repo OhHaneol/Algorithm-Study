@@ -21,7 +21,7 @@
 
 ### DFS-Recursive(재귀함수)  
 
-<img width=400 alt="스택 프레임" src="https://github.com/OhHaneol/Algorithm-Study/assets/62991586/6dcafb2d-a915-4f17-99fc-d420fa13736d">
+<img width=300 alt="스택 프레임" src="https://github.com/OhHaneol/Algorithm-Study/assets/62991586/6dcafb2d-a915-4f17-99fc-d420fa13736d">
 
 - 재귀함수는 다음과 같이 동작한다.
   
@@ -32,8 +32,24 @@
 - 재귀함수의 성능은?
   
   - 스택프레임이 돌아가니 for 문 등에 비해서 좋지는 않다.
+ 
+- DFS 는 완벽한 이진 트리에서 작동한다. 자식 노드가 왼쪽과 오른쪽 둘 중 하나만 존재할 경우 Error 가 발생할 수 있다.
 
-- 재귀함수 문제
+### BFS - 최단거리
+
+- BFS 는 보통 레벨 탐색으로 **최단 거리** 문제에 많이 사용된다.
+
+- 레벨 탐색은 다음과 같이 동작한다.
+
+  1. 맨 처음 `Queue`를 선언한 뒤 루트 노드를 `offer` 한다.
+     
+  3. Queue 가 비어 있지 않으면 실행되는 **레벨 반복문**을 시작하고, 각 레벨의 노드 수인 `Q.size` 만큼 **노드 반복문**을 실행한다.
+     
+  5. 노드 반복문 내부에서는 필요한 작업과 함께 해당 노드의 자식 노드를 `offer` 한다.
+     
+  7. 레벨 반복문의 끝에서 레벨을 높인 뒤 다음 레벨 반복으로 넘어간다.
+
+### 문제
 
   - [팩토리얼!](https://github.com/OhHaneol/Algorithm-Study/blob/main/DFS-BFS-%EA%B8%B0%EC%B4%88/factorial.java)
     
@@ -41,13 +57,11 @@
 
     - 각 피보나치 수를 배열에 저장하는 메모리제이션을 사용하여 이미 구한 수는 건너뛰었다. (성능 향상)
     
-  - [이진 트리 순회](https://github.com/OhHaneol/Algorithm-Study/blob/main/DFS-BFS-%EA%B8%B0%EC%B4%88/binaryTree.java)
+  - [이진 트리 순회 - DFS](https://github.com/OhHaneol/Algorithm-Study/blob/main/DFS-BFS-%EA%B8%B0%EC%B4%88/binaryTree.java)
     
     - 전위 기준: 하위 루트 노드의 순회 및 출력이 끝나면 백트래킹하고, 상위 루트 노드에서 마찬가지로 로직을 수행한다.
-   
-- 레벨 탐색 문제
 
-  - [부분집합 구하기](https://github.com/OhHaneol/Algorithm-Study/blob/main/DFS-BFS-%EA%B8%B0%EC%B4%88/subset.java)
+  - [부분집합 구하기 - DFS](https://github.com/OhHaneol/Algorithm-Study/blob/main/DFS-BFS-%EA%B8%B0%EC%B4%88/subset.java)
 
     - 1부터 n 까지의 모든 부분집합을 구하기 위해, 출력 여부(각 부분집합 포함 여부)를 0과 1로 저장하는 ch[] 배열을 저장한다.
       
@@ -55,11 +69,13 @@
 
   - [이진트리 레벨탐색](https://github.com/OhHaneol/Algorithm-Study/blob/main/DFS-BFS-%EA%B8%B0%EC%B4%88/BFS.java)
 
-    - 맨 처음 `Queue` 에 루트 노드를 `offer` 하고, 레벨을 나타내는 `L` 을 선언한다.
-    - 전체 레벨에 대한 반복문 `while` 문 내부에서 각 레벨당 노드 수를 나타내는 `len` 에 대해, 다시 각 레벨의 노드별 데이터를 출력하며 해당 노드의 자식 노드를 `Queue` 에 `offer` 하는 `for` 문을 돌린다.
-
   - [송아지 찾기 1](https://github.com/OhHaneol/Algorithm-Study/tree/main/DFS-BFS-%EA%B8%B0%EC%B4%88/%EC%86%A1%EC%95%84%EC%A7%80%20%EC%B0%BE%EA%B8%B0%201)
 
+  - [Tree 말단 노드까지의 가장 짧은 경로 - DFS](https://github.com/OhHaneol/Algorithm-Study/blob/main/DFS-BFS-%EA%B8%B0%EC%B4%88/shortcutToLastNode-DFS.java)
+
+    - DFS 는 최단경로에 적합하지 않지만, 공부 차원에서 문제가 나왔다.
+
+  - [Tree 말단 노드까지의 가장 짧은 경로 - BFS](https://github.com/OhHaneol/Algorithm-Study/blob/main/DFS-BFS-%EA%B8%B0%EC%B4%88/shortcutToLastNode-BFS.java)
 
 ---
 
