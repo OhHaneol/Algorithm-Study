@@ -99,7 +99,7 @@
 
 - [경로 탐색 - DFS](https://github.com/OhHaneol/Algorithm-Study/blob/main/DFS-BFS-%EA%B8%B0%EC%B4%88/Graph/%EA%B2%BD%EB%A1%9C%ED%83%90%EC%83%89(DFS).java)
   
-  <img width=300 alt="그래프" src="https://github.com/OhHaneol/Algorithm-Study/assets/62991586/72133f60-b5c8-45a0-94a1-e1d462c5db6d">
+    <img width=300 alt="그래프" src="https://github.com/OhHaneol/Algorithm-Study/assets/62991586/d7e3fce1-8640-48d1-b9ac-30586915dfbf">
 
   - 주어진 방향그래프에서 1번 정점으로부터 N번 정점으로 가는 모든 경로의 가지 수를 출력하는 문제. 보통 stack 을 이용하면 편하지만, 공부를 위해 위의 그림과 같은 상태 트리를 이용한다.
   - 체크 배열을 만들고 두 번 이상 방문하지 않도록 한 번 방문한 노드는 체크 한다. 또 출발 노드는 앞으로 갈 방향에 포함되지 않기 때문에 마찬가지로 체크한다.
