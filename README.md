@@ -99,29 +99,34 @@
 
 - [경로 탐색(DFS) - 인접 행렬](https://github.com/OhHaneol/Algorithm-Study/blob/main/DFS-BFS-%EA%B8%B0%EC%B4%88/Graph/%EA%B2%BD%EB%A1%9C%ED%83%90%EC%83%89(DFS).java)
 
-    | 그래프 | 풀이 방식 |
-    |:---:|:---:|
-    | <img width=300 alt="방향 그래프" src="https://github.com/OhHaneol/Algorithm-Study/assets/62991586/ac70b4a3-77d4-4503-8424-daf2818e3dbd"> | <img width=300 alt="방법" src="https://github.com/OhHaneol/Algorithm-Study/assets/62991586/57e61bbe-bb78-48ab-a3d2-16b55dff925d"> |
+  - 주어진 방향그래프에서 1번 정점으로부터 N번 정점으로 가는 모든 경로의 가지 수를 출력하는 문제. 보통 stack 을 이용하면 편하지만, 공부를 위해 아래의 그림과 같은 상태 트리에서 **인접 행렬**을 이용한다.
 
-  - 주어진 방향그래프에서 1번 정점으로부터 N번 정점으로 가는 모든 경로의 가지 수를 출력하는 문제. 보통 stack 을 이용하면 편하지만, 공부를 위해 위의 그림과 같은 상태 트리에서 **인접 행렬**을 이용한다.
+      | 그래프 | 풀이 방식 |
+      |:---:|:---:|
+      | <img width=300 alt="방향 그래프" src="https://github.com/OhHaneol/Algorithm-Study/assets/62991586/ac70b4a3-77d4-4503-8424-daf2818e3dbd"> | <img width=300 alt="방법" src="https://github.com/OhHaneol/Algorithm-Study/assets/62991586/57e61bbe-bb78-48ab-a3d2-16b55dff925d"> |
+  
   - 체크 배열을 만들고 두 번 이상 방문하지 않도록 한 번 방문한 노드는 체크 한다. 또 출발 노드는 앞으로 갈 방향에 포함되지 않기 때문에 마찬가지로 체크한다.
   - 하나의 경로가 만들어지면 백트래킹을 하게 되고, 이 때 백트래킹 한 상위 노트는 체크를 풀어야 한다.
   - 예를 들어 `1 2 3 4 5` 라는 경로가 하나 만들어지고, 이외에 다른 경로가 나올 때까지 백트래킹을 한 결과 `노드 2` 까지 올라갔다면, 그 중간의 `노드 3`과 `노드 4`는 체크를 해제한다.
 
 - [경로 탐색 - 인접리스트, ArrayList](https://github.com/OhHaneol/Algorithm-Study/blob/main/DFS-BFS-%EA%B8%B0%EC%B4%88/Graph/%EA%B2%BD%EB%A1%9C%ED%83%90%EC%83%89(%EC%9D%B8%EC%A0%91%EB%A6%AC%EC%8A%A4%ED%8A%B8%2C%20ArrayList).java)
 
-    | 그래프 | 풀이 방식 |
-    |:---:|:---:|
-    | <img width=300 alt="방향 그래프" src="https://github.com/OhHaneol/Algorithm-Study/assets/62991586/ac70b4a3-77d4-4503-8424-daf2818e3dbd"> | <img width=300 alt="방법" src="https://github.com/OhHaneol/Algorithm-Study/assets/62991586/9b86c001-efa5-4834-8f66-b788d8e6929e"> |
+  - 위와 같은, 주어진 방향그래프에서 1번 정점으로부터 N번 정점으로 가는 모든 경로의 가지 수를 출력하는 문제. 
+
+      | 그래프 | 풀이 방식 |
+      |:---:|:---:|
+      | <img width=300 alt="방향 그래프" src="https://github.com/OhHaneol/Algorithm-Study/assets/62991586/ac70b4a3-77d4-4503-8424-daf2818e3dbd"> | <img width=300 alt="방법" src="https://github.com/OhHaneol/Algorithm-Study/assets/62991586/9b86c001-efa5-4834-8f66-b788d8e6929e"> |
 
   - 정점의 크기가 만 개, 십만 개 이상으로 늘어날 경우 인접행렬로는 시간 복잡도가 증가하거나, 메모리가 낭비되는 등의 문제가 발생한다.
   - 이 경우 **인접 리스트**를 이용하여 각 정점에서 갈 수 있는 정점의 리스트로 graph 를 만든다.
 
 - [그래프 최단 거리(BFS) - 인접리스트, Queue](https://github.com/OhHaneol/Algorithm-Study/blob/main/DFS-BFS-%EA%B8%B0%EC%B4%88/Graph/%EA%B7%B8%EB%9E%98%ED%94%84%20%EC%B5%9C%EB%8B%A8%EA%B1%B0%EB%A6%AC(BFS).java)
 
-    | 그래프 | 풀이 방식 |
-    |:---:|:---:|
-    | <img width=300 alt="방향 그래프" src="https://github.com/OhHaneol/Algorithm-Study/assets/62991586/cb761762-f1d6-49b5-9f61-08977bb8a19e"> | <img width=300 alt="방법" src="https://github.com/OhHaneol/Algorithm-Study/assets/62991586/2b076ad1-dbb1-4199-b73f-e0d8cc783396"> |
+  - 1번 정점에서 각 정점으로 가는 최소 이동 간선 수를 출력하는 문제.
+
+      | 그래프 | 풀이 방식 |
+      |:---:|:---:|
+      | <img width=300 alt="방향 그래프" src="https://github.com/OhHaneol/Algorithm-Study/assets/62991586/cb761762-f1d6-49b5-9f61-08977bb8a19e"> | <img width=300 alt="방법" src="https://github.com/OhHaneol/Algorithm-Study/assets/62991586/2b076ad1-dbb1-4199-b73f-e0d8cc783396"> |
   
   - **최단 거리** -> BFS -> Queue 를 사용하여 앞으로 들릴 곳이 남은 노드(cv)를 저장하고, `cv` 에서 연결된 노드(nv)들 중 들리지 않은 곳을 들리며 작업을 진행한다.
   - cv(current vertex) : `queue.poll()` 하여 `nv` 를 살펴볼 값
