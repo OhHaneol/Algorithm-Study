@@ -19,63 +19,102 @@
 
 ## 📍 Recursive, Tree, Graph_DFS, BFS 기초
 
-### DFS-Recursive(재귀함수)  
+### 🧷 DFS - Tree, Recursive(재귀함수)
+
+#### 개념
 
 <img width=300 alt="스택 프레임" src="https://github.com/OhHaneol/Algorithm-Study/assets/62991586/6dcafb2d-a915-4f17-99fc-d420fa13736d">
 
 - 재귀함수는 다음과 같이 동작한다.
-  
   1. 정해진 '조건' 이전까지는 스택 프레임에 순차적으로 저장된다. 이 때 변수 외에도 해당 함수가 재귀된 순간의 라인 넘버가 저장된다.
-  
   2. '조건'에 이르면, LIFO 형식을 취하는 스택 프레임에 의해 마지막으로 저장된 것 부터 역으로 꺼내어 실행된다.
 
 - 재귀함수의 성능은?
-  
   - 스택프레임이 돌아가니 for 문 등에 비해서 좋지는 않다.
  
-- DFS 는 완벽한 이진 트리에서 작동한다. 자식 노드가 왼쪽과 오른쪽 둘 중 하나만 존재할 경우 Error 가 발생할 수 있다.
+- 이진트리에서 DFS 는 자식 노드가 왼쪽과 오른쪽 둘 중 하나만 존재할 경우 Error 가 발생할 수 있다.
 
-### BFS - 최단거리
+#### 문제
+
+  - [팩토리얼! - Recursive](https://github.com/OhHaneol/Algorithm-Study/blob/main/DFS-BFS-%EA%B8%B0%EC%B4%88/DFS/%ED%8C%A9%ED%86%A0%EB%A6%AC%EC%96%BC_recursive.java)
+    
+  - [피보나치 출력 - Recursive](https://github.com/OhHaneol/Algorithm-Study/blob/main/DFS-BFS-%EA%B8%B0%EC%B4%88/DFS/Recursive-%ED%94%BC%EB%B3%B4%EB%82%98%EC%B9%98%20%EC%B6%9C%EB%A0%A5.java)
+    - 각 피보나치 수를 배열에 저장하는 메모리제이션을 사용하여 이미 구한 수는 건너뛰었다. (성능 향상)
+    
+  - [이진 트리 순회 - DFS](https://github.com/OhHaneol/Algorithm-Study/blob/main/DFS-BFS-%EA%B8%B0%EC%B4%88/DFS/%EC%9D%B4%EC%A7%84%ED%8A%B8%EB%A6%AC%EC%88%9C%ED%9A%8C.java)
+    - 전위 기준: 하위 루트 노드의 순회 및 출력이 끝나면 백트래킹하고, 상위 루트 노드에서 마찬가지로 로직을 수행한다.
+
+  - [부분집합 구하기 - DFS](https://github.com/OhHaneol/Algorithm-Study/blob/main/DFS-BFS-%EA%B8%B0%EC%B4%88/DFS/%EB%B6%80%EB%B6%84%EC%A7%91%ED%95%A9%EA%B5%AC%ED%95%98%EA%B8%B0.java)
+    - 1부터 n 까지의 모든 부분집합을 구하기 위해, 출력 여부(각 부분집합 포함 여부)를 0과 1로 저장하는 ch[] 배열을 저장한다.
+    - 만약 단말 노드(n)에 이르를 경우(L == n + 1) ch[] 배열에서 1로 저장된 인덱스만 출력한다.
+
+  - [Tree 말단 노드까지의 가장 짧은 경로 - DFS](https://github.com/OhHaneol/Algorithm-Study/blob/main/DFS-BFS-%EA%B8%B0%EC%B4%88/DFS/Tree%20%EB%A7%90%EB%8B%A8%20%EB%85%B8%EB%93%9C%EA%B9%8C%EC%A7%80%20%EC%B5%9C%EB%8B%A8%EA%B2%BD%EB%A1%9C.java)
+    - DFS 는 최단경로에 적합하지 않지만, 공부 차원에서 문제가 나왔다.
+
+
+
+### 🧷 BFS - 최단거리
+
+#### 개념
 
 - BFS 는 보통 레벨 탐색으로 **최단 거리** 문제에 많이 사용된다.
 
 - 레벨 탐색은 다음과 같이 동작한다.
-
   1. 맨 처음 `Queue`를 선언한 뒤 루트 노드를 `offer` 한다.
-     
   3. Queue 가 비어 있지 않으면 실행되는 **레벨 반복문**을 시작하고, 각 레벨의 노드 수인 `Q.size` 만큼 **노드 반복문**을 실행한다.
-     
   5. 노드 반복문 내부에서는 필요한 작업과 함께 해당 노드의 자식 노드를 `offer` 한다.
-     
   7. 레벨 반복문의 끝에서 레벨을 높인 뒤 다음 레벨 반복으로 넘어간다.
 
-### 문제
+#### 문제
 
-  - [팩토리얼!](https://github.com/OhHaneol/Algorithm-Study/blob/main/DFS-BFS-%EA%B8%B0%EC%B4%88/factorial.java)
-    
-  - [피보나치 출력](https://github.com/OhHaneol/Algorithm-Study/blob/main/DFS-BFS-%EA%B8%B0%EC%B4%88/fibonacci.java)
-
-    - 각 피보나치 수를 배열에 저장하는 메모리제이션을 사용하여 이미 구한 수는 건너뛰었다. (성능 향상)
-    
-  - [이진 트리 순회 - DFS](https://github.com/OhHaneol/Algorithm-Study/blob/main/DFS-BFS-%EA%B8%B0%EC%B4%88/binaryTree.java)
-    
-    - 전위 기준: 하위 루트 노드의 순회 및 출력이 끝나면 백트래킹하고, 상위 루트 노드에서 마찬가지로 로직을 수행한다.
-
-  - [부분집합 구하기 - DFS](https://github.com/OhHaneol/Algorithm-Study/blob/main/DFS-BFS-%EA%B8%B0%EC%B4%88/subset.java)
-
-    - 1부터 n 까지의 모든 부분집합을 구하기 위해, 출력 여부(각 부분집합 포함 여부)를 0과 1로 저장하는 ch[] 배열을 저장한다.
-      
-    - 만약 단말 노드(n)에 이르를 경우(L == n + 1) ch[] 배열에서 1로 저장된 인덱스만 출력한다.
-
-  - [이진트리 레벨탐색](https://github.com/OhHaneol/Algorithm-Study/blob/main/DFS-BFS-%EA%B8%B0%EC%B4%88/BFS.java)
-
-  - [송아지 찾기 1](https://github.com/OhHaneol/Algorithm-Study/tree/main/DFS-BFS-%EA%B8%B0%EC%B4%88/%EC%86%A1%EC%95%84%EC%A7%80%20%EC%B0%BE%EA%B8%B0%201)
-
-  - [Tree 말단 노드까지의 가장 짧은 경로 - DFS](https://github.com/OhHaneol/Algorithm-Study/blob/main/DFS-BFS-%EA%B8%B0%EC%B4%88/shortcutToLastNode-DFS.java)
-
-    - DFS 는 최단경로에 적합하지 않지만, 공부 차원에서 문제가 나왔다.
-
+  - [이진트리 레벨탐색](https://github.com/OhHaneol/Algorithm-Study/blob/main/DFS-BFS-%EA%B8%B0%EC%B4%88/BFS/%EC%9D%B4%EC%A7%84%ED%8A%B8%EB%A6%AC%20%EB%A0%88%EB%B2%A8%20%ED%83%90%EC%83%89.java)
+  - [송아지 찾기 1](https://github.com/OhHaneol/Algorithm-Study/tree/main/DFS-BFS-%EA%B8%B0%EC%B4%88/BFS/%EC%86%A1%EC%95%84%EC%A7%80%20%EC%B0%BE%EA%B8%B0%201)
   - [Tree 말단 노드까지의 가장 짧은 경로 - BFS](https://github.com/OhHaneol/Algorithm-Study/blob/main/DFS-BFS-%EA%B8%B0%EC%B4%88/shortcutToLastNode-BFS.java)
+
+
+### 🧷 Graph - DFS, BFS 이용
+
+#### 개념
+
+1. 무방향 그래프
+
+    | 그래프 | 인접행렬 |
+    |:---:|:---:|
+    | <img width=300 alt="그래프" src="https://github.com/OhHaneol/Algorithm-Study/assets/62991586/f6d7dc6d-8ca9-4b8d-b0d3-78187013c103"> | <img width=200 alt="인접행렬" src="https://github.com/OhHaneol/Algorithm-Study/assets/62991586/f25d4605-9795-449b-ad9e-434f25440bde"> |
+     
+2. 방향 그래프
+
+    | 그래프 | 인접행렬 |
+    |:---:|:---:|
+    | <img width=300 alt="그래프" src="https://github.com/OhHaneol/Algorithm-Study/assets/62991586/9cc621d7-248e-476e-b730-6df8bb47f3c2"> | <img width=200 alt="인접행렬" src="https://github.com/OhHaneol/Algorithm-Study/assets/62991586/11fc9978-4f35-42de-9031-3cb46038b144"> |
+
+   
+3. 가중치 그래프
+
+    | 그래프 | 인접행렬 |
+    |:---:|:---:|
+    | <img width=300 alt="그래프" src="https://github.com/OhHaneol/Algorithm-Study/assets/62991586/ca353eb2-c205-4316-ac36-398cb8d2e386"> | <img width=200 alt="인접행렬" src="https://github.com/OhHaneol/Algorithm-Study/assets/62991586/8801bf0c-99a9-44a7-b2c1-0b32a53b1971"> |
+
+#### 문제
+
+- [경로 탐색 - DFS](https://github.com/OhHaneol/Algorithm-Study/blob/main/DFS-BFS-%EA%B8%B0%EC%B4%88/Graph/%EA%B2%BD%EB%A1%9C%ED%83%90%EC%83%89(DFS).java)
+  
+  <img width=300 alt="그래프" src="https://github.com/OhHaneol/Algorithm-Study/assets/62991586/72133f60-b5c8-45a0-94a1-e1d462c5db6d">
+
+  - 주어진 방향그래프에서 1번 정점으로부터 N번 정점으로 가는 모든 경로의 가지 수를 출력하는 문제. 보통 stack 을 이용하면 편하지만, 공부를 위해 위의 그림과 같은 상태 트리를 이용한다.
+  - 체크 배열을 만들고 두 번 이상 방문하지 않도록 한 번 방문한 노드는 체크 한다. 또 출발 노드는 앞으로 갈 방향에 포함되지 않기 때문에 마찬가지로 체크한다.
+  - 하나의 경로가 만들어지면 백트래킹을 하게 되고, 이 때 백트래킹 한 상위 노트는 체크를 풀어야 한다.
+  - 예를 들어 `1 2 3 4 5` 라는 경로가 하나 만들어지고, 이외에 다른 경로가 나올 때까지 백트래킹을 한 결과 `노드 2` 까지 올라갔다면, 그 중간의 `노드 3`과 `노드 4`는 체크를 해제한다.
+
+- [경로 탐색 - 인접리스트, ArrayList]()
+  
+  <img width=300 alt="그래프" src="">
+
+- [그래프 최단 거리 - BFS]()
+  
+  <img width=300 alt="그래프" src="">
+  
+
 
 ---
 
