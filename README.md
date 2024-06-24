@@ -69,7 +69,7 @@
 
   - [이진트리 레벨탐색](https://github.com/OhHaneol/Algorithm-Study/blob/main/DFS-BFS-%EA%B8%B0%EC%B4%88/BFS/%EC%9D%B4%EC%A7%84%ED%8A%B8%EB%A6%AC%20%EB%A0%88%EB%B2%A8%20%ED%83%90%EC%83%89.java)
   - [송아지 찾기 1](https://github.com/OhHaneol/Algorithm-Study/tree/main/DFS-BFS-%EA%B8%B0%EC%B4%88/BFS/%EC%86%A1%EC%95%84%EC%A7%80%20%EC%B0%BE%EA%B8%B0%201)
-  - [Tree 말단 노드까지의 가장 짧은 경로 - BFS](https://github.com/OhHaneol/Algorithm-Study/blob/main/DFS-BFS-%EA%B8%B0%EC%B4%88/shortcutToLastNode-BFS.java)
+  - [Tree 말단 노드까지의 가장 짧은 경로 - BFS](https://github.com/OhHaneol/Algorithm-Study/blob/main/DFS-BFS-%EA%B8%B0%EC%B4%88/BFS/%ED%8A%B8%EB%A6%AC%20%EB%A7%90%EB%8B%A8%20%EB%85%B8%EB%93%9C%EA%B9%8C%EC%A7%80%20%EC%B5%9C%EB%8B%A8%EA%B2%BD%EB%A1%9C.java)
 
 
 ### 🧷 Graph - DFS, BFS 이용
