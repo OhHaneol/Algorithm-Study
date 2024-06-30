@@ -3,11 +3,11 @@
 
 ## 목차
 
-1. [DFS - Tree, Recursive(재귀함수)](#DFS---Tree,-Recursive(재귀함수))
+1. [DFS - Tree, Recursive(재귀함수)](#-dfs---tree,-recursive(재귀함수))
 
-2. [BFS - 최단거리](#BFS---최단거리)
+2. [BFS - 최단거리](#-bfs---최단거리)
 
-3. [Graph - DFS, BFS 이용](#Graph---DFS,-BFS-이용)
+3. [Graph - DFS, BFS 이용](#-graph---dfs,-bfs-이용)
   
 4. [DFS, BFS 활용](#-dfs,-bfs-활용)
   
