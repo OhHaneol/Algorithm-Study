@@ -3,25 +3,27 @@
 
 ## 목차
 
-1. [Recursive, Tree, Graph_DFS, BFS 기초](#-recursive,-tree,-graph_dfs,-bfs-기초)
+1. [DFS - Tree, Recursive(재귀함수)](#DFS---Tree,-Recursive(재귀함수))
+
+2. [BFS - 최단거리](#BFS---최단거리)
+
+3. [Graph - DFS, BFS 이용](#Graph---DFS,-BFS-이용)
   
 4. [DFS, BFS 활용](#-dfs,-bfs-활용)
   
-2. [Exhaustive Algorithm](#-exhaustive-algorithm)
+5. [Exhaustive Algorithm](#-exhaustive-algorithm)
   
-3. [Greedy Algorithm](#-greedy-algorithm)
+6. [Greedy Algorithm](#-greedy-algorithm)
   
-5. [dynamic programming_동적계획법](#-dynamic-programming_동적계획법)
+7. [dynamic programming_동적계획법](#-dynamic-programming_동적계획법)
   
-6. [Sorting and Searching](#-sorting-and-searching)
+8. [Sorting and Searching](#-sorting-and-searching)
   
 ---
 
-## 📍 Recursive, Tree, Graph_DFS, BFS 기초
+## 📍 DFS - Tree, Recursive(재귀함수)
 
-### 🧷 DFS - Tree, Recursive(재귀함수)
-
-#### 개념
+### 🧷 개념
 
 <img width=300 alt="스택 프레임" src="https://github.com/OhHaneol/Algorithm-Study/assets/62991586/6dcafb2d-a915-4f17-99fc-d420fa13736d">
 
@@ -34,7 +36,7 @@
  
 - 이진트리에서 DFS 는 자식 노드가 왼쪽과 오른쪽 둘 중 하나만 존재할 경우 Error 가 발생할 수 있다.
 
-#### 문제
+### 🧷 문제 풀이
 
   - [팩토리얼! - Recursive](https://github.com/OhHaneol/Algorithm-Study/blob/main/DFS-BFS-%EA%B8%B0%EC%B4%88/DFS/%ED%8C%A9%ED%86%A0%EB%A6%AC%EC%96%BC_recursive.java)
     
@@ -53,9 +55,9 @@
 
 
 
-### 🧷 BFS - 최단거리
+## 📍 BFS - 최단거리
 
-#### 개념
+### 🧷 개념
 
 - BFS 는 보통 레벨 탐색으로 **최단 거리** 문제에 많이 사용된다.
 
@@ -65,16 +67,16 @@
   5. 노드 반복문 내부에서는 필요한 작업과 함께 해당 노드의 자식 노드를 `offer` 한다.
   7. 레벨 반복문의 끝에서 레벨을 높인 뒤 다음 레벨 반복으로 넘어간다.
 
-#### 문제
+### 🧷 문제 풀이
 
   - [이진트리 레벨탐색](https://github.com/OhHaneol/Algorithm-Study/blob/main/DFS-BFS-%EA%B8%B0%EC%B4%88/BFS/%EC%9D%B4%EC%A7%84%ED%8A%B8%EB%A6%AC%20%EB%A0%88%EB%B2%A8%20%ED%83%90%EC%83%89.java)
   - [송아지 찾기 1](https://github.com/OhHaneol/Algorithm-Study/tree/main/DFS-BFS-%EA%B8%B0%EC%B4%88/BFS/%EC%86%A1%EC%95%84%EC%A7%80%20%EC%B0%BE%EA%B8%B0%201)
   - [Tree 말단 노드까지의 가장 짧은 경로 - BFS](https://github.com/OhHaneol/Algorithm-Study/blob/main/DFS-BFS-%EA%B8%B0%EC%B4%88/BFS/%ED%8A%B8%EB%A6%AC%20%EB%A7%90%EB%8B%A8%20%EB%85%B8%EB%93%9C%EA%B9%8C%EC%A7%80%20%EC%B5%9C%EB%8B%A8%EA%B2%BD%EB%A1%9C.java)
 
 
-### 🧷 Graph - DFS, BFS 이용
+## 📍 Graph - DFS, BFS 이용
 
-#### 개념
+### 🧷 개념
 
 1. 무방향 그래프
 
@@ -95,7 +97,7 @@
     |:---:|:---:|
     | <img width=300 alt="그래프" src="https://github.com/OhHaneol/Algorithm-Study/assets/62991586/ca353eb2-c205-4316-ac36-398cb8d2e386"> | <img width=200 alt="인접행렬" src="https://github.com/OhHaneol/Algorithm-Study/assets/62991586/8801bf0c-99a9-44a7-b2c1-0b32a53b1971"> |
 
-#### 문제
+### 🧷 문제 풀이
 
 - [경로 탐색(DFS) - 인접 행렬](https://github.com/OhHaneol/Algorithm-Study/blob/main/DFS-BFS-%EA%B8%B0%EC%B4%88/Graph/%EA%B2%BD%EB%A1%9C%ED%83%90%EC%83%89(DFS).java)
 
@@ -131,16 +133,20 @@
   - **최단 거리** -> BFS -> Queue 를 사용하여 앞으로 들릴 곳이 남은 노드(cv)를 저장하고, `cv` 에서 연결된 노드(nv)들 중 들리지 않은 곳을 들리며 작업을 진행한다.
   - cv(current vertex) : `queue.poll()` 하여 `nv` 를 살펴볼 값
   - nv(next vertex) : `graph.get(cv)` 하여 `queue.offer(nv)`할 값
+ 
   
 ---
 
-## 📍 DFS, BFS 활용
 
-### 🧷 개념
+## 📍 DFS, BFS 활용
 
 ### 🧷 문제 풀이
 
-- []()
+- [합이 같은 부분집합](https://github.com/OhHaneol/Algorithm-Study/blob/main/DFS-BFS-%ED%99%9C%EC%9A%A9/DFS/%ED%95%A9%EC%9D%B4%20%EA%B0%99%EC%9D%80%20%EB%B6%80%EB%B6%84%EC%A7%91%ED%95%A9.java)
+
+  - 각 레벨마다 해당 숫자를 포함할지, 하지 않을지를 sum 에 더하는 것으로써 선택하여 DFS 메서드를 재귀로 돌린다.
+  - 마지막 레벨에 도달했을 때 합이 같다면 답으로 체킹한 뒤 return 하도록 한다.
+  - 이 때 배열은 **크기가 정해저 있지 않기 때문에** `static` 으로 선언하지 않고, 함수에 파라미터로 함께 넘기도록 한다.
   
 - []()
   
