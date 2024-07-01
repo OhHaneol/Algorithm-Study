@@ -1,15 +1,12 @@
-
 import java.util.Scanner;
 
 class Main {
-    static int c;
-    static int n;
-    static int weighMax = Integer.MAX_VALUE;
+    static int answer = Integer.MIN_VALUE, c, n;
 
     public static void DFS(int L, int weighSum, int[] weighs) {
-        if(weighSum > c) return;
+        if (weighSum > c) return;
         if (L == n) {
-            weighMax = Math.max(weighMax, weighSum);
+            answer = Math.max(answer, weighSum);
         } else {
             DFS(L + 1, weighSum + weighs[L], weighs);
             DFS(L + 1, weighSum, weighs);
@@ -25,6 +22,6 @@ class Main {
             weighs[i] = sc.nextInt();
         }
         DFS(0, 0, weighs);
-        System.out.println();
+        System.out.println(answer);
     }
 }
